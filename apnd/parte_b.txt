@@ -1,0 +1,34 @@
+Parte B - Razonamiento 
+
+1- Explique por qué utilizar múltiples listas separadas para almacenar datos relacionados puede generar errores de consistencia. 
+
+Utilizar múltiples listas separadas puede generar errores de consistencia porque los datos relacionados mantienen los mismos 
+índices en todas las listas. Si se agrega, elimina o reordena un elemento sin actualizar las demás listas, se pierde la 
+relación entre los datos. Agrupar la información dentro de una misma estructura evita estos errores.
+
+
+2- Explique qué ventajas aporta utilizar una estructura basada en clave-valor para buscar información. 
+
+Las ventajas de utilizar diccionarios, permite acceder directamente a la información mediante una clave única, sin necesidad 
+de recorrer secuencialmente todos los elementos. 
+Esto mejora la eficiencia de las búsquedas, facilita la organización de los datos y simplifica el código.
+
+
+3- Explique por qué una estructura que no permite duplicados puede ser útil en sistemas reales.
+
+Los conjuntos ó sets pueden ser útiles en sistemas reales porque permiten garantizar la unificación de los elementos almacenados.
+Esto ayuda a mantener la integridad y consistencia de los datos, evitando registros repetidos de un mismo identificador y 
+posibles errores en el procesamiento de la información.
+
+
+4- Explique las diferencias entre almacenar datos: 
+* únicamente en memoria;  
+* en archivos.  
+¿En qué situaciones utilizaría cada alternativa?
+
+Las diferencias entre almacenar datos en memoria y en archivos son:
+En memoria, es temporal, por lo que dejan de estar disponibles al finalizar el programa. 
+En cambio, el almacenamiento en archivos permite implementar la persistencia de datos, conservando la información entre ejecuciones. 
+
+Utilizaría la memoria para procesar información temporal y los archivos para almacenar datos que deban recuperarse posteriormente. 
+Ambas alternativas pueden complementarse dentro de un mismo sistema.

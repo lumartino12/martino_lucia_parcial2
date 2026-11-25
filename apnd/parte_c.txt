@@ -1,0 +1,166 @@
+Parte C - Análisis de código 
+
+Ejemplo 1
+¿El código funcionará?  
+no
+
+¿Qué ocurrirá?  
+tira error al querer modificar un elemento de la tupla por ínicide
+
+¿Por qué?  
+porque las tuplas no permiten este tipo de modificación por índice
+
+¿Qué característica de la estructura utilizada produce ese comportamiento? 
+lo que produce este comportamiento es la inmutabilidad, no se pueden modificar los elementos una vez creada
+
+------------------------------------------------------------------------------------------------------------
+
+Ejemplo 2
+¿Cuántos elementos contendrá la estructura?  
+la estructura contendrá 3 elementos
+
+¿Por qué?  
+porque los conjuntos no permiten el duplicado de los elementos
+
+¿Qué ventaja aporta este comportamiento? 
+la ventaja es que resulta útil para unificar elementos almacenados, evitando registros repetidos
+
+------------------------------------------------------------------------------------------------------------
+
+Ejemplo 3
+¿Qué estructura de datos aparece en el ejemplo?  
+diccionario anidado
+
+¿Qué representa cada clave?  
+la clave principal permite identificar al libro, mientras que las claves internas permiten identificar su título y su autor
+
+¿Qué ventajas ofrece para realizar búsquedas? 
+las ventajas son que permite acceder a la información mediante claves únicas y no requiere recorrer todos los registros 
+para encontrar un libro
+
+
+------------------------------------------------------------------------------------------------------------
+
+Un desarrollador afirma: 
+"Podría resolver todos los problemas utilizando únicamente listas." 
+
+- ¿Está de acuerdo con esta afirmación? 
+no estoy de acuerdo, ya que se pueden resolver muchos problemas utilizando únicamente listas, pero esto no significa que sean siempre
+la mejor opción, cada estructura de datos tiene sus particularidades para resolver diversos problemas de forma más fácil
+
+- Justifique su respuesta indicando ventajas y desventajas de esa decisión.
+las ventajas de las listas es que son mutables, permiten almacenar diversos tipos de datos y se puede acceder a los elementos 
+mediante índices,
+
+las desventajas son que aceptan elementos duplicados, cuando no sabemos el índice de un elemento, debemos realizar una búsqueda
+secuencial, lo que requiere mayor cantidad de código para resolver un problema.
+
+
+------------------------------------------------------------------------------------------------------------
+
+
+Preguntas de selección múltiple 
+
+1- Respecto a los diccionarios en Python: 
+
+Permiten almacenar información mediante pares clave-valor. 
+Verdadero
+
+Las claves deben ser únicas. 
+Verdadero
+
+Los diccionarios mantienen el orden únicamente si se utiliza sorted(). 
+Falso
+
+Se puede acceder a un valor utilizando su clave. 
+Verdadero
+
+Los diccionarios no permiten almacenar otros diccionarios. 
+Falso
+
+Son útiles para representar entidades como alumnos, libros o productos.
+Verdadero
+
+
+2- Respecto a las tuplas: 
+
+Son estructuras mutables. 
+Falso
+
+Permiten almacenar distintos tipos de datos. 
+Verdadero
+
+Una vez creadas, sus elementos no pueden modificarse. 
+Verdadero
+
+Son adecuadas para representar información que no debería cambiar. 
+Verdadero
+
+Siempre ocupan más memoria que las listas. 
+Falso
+
+Admiten acceso mediante índices.
+Verdadero
+
+
+3- Respecto a los conjuntos (set): 
+
+Permiten elementos duplicados. 
+Falso
+
+Son útiles para eliminar elementos repetidos. 
+Verdadero
+
+No garantizan posiciones mediante índices. 
+Verdadero
+
+Permiten acceder a sus elementos utilizando índices. 
+Falso
+
+Son adecuados para representar colecciones de elementos únicos. 
+Verdadero
+
+Mantienen necesariamente el orden de inserción.
+Falso
+
+
+4- Respecto a las matrices en Python: 
+
+Generalmente se representan mediante listas anidadas. 
+Verdadero
+
+Son adecuadas para modelar información organizada en filas y columnas. 
+Verdadero
+
+Son una estructura nativa específica de Python llamada matrix. 
+Falso
+
+No pueden recorrerse mediante ciclos. 
+Falso
+
+Todos sus elementos deben ser del mismo tipo. 
+Falso
+
+Permiten acceder a una posición utilizando fila y columna. 
+Verdadero
+
+
+5- Respecto al manejo de archivos: 
+
+Permite conservar información luego de finalizar la ejecución del programa. 
+Verdadero
+
+El modo "r" se utiliza para lectura. 
+Verdadero
+
+El modo "w" permite escribir en un archivo. 
+Verdadero
+
+Los datos almacenados en archivos desaparecen cuando el programa finaliza. 
+Falso
+
+La instrucción with open(...) ayuda a gestionar correctamente el cierre del archivo. 
+Verdadero
+
+Los archivos solo pueden almacenar texto.
+Falso
